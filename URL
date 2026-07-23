@@ -1,0 +1,6 @@
+- `http://localhost:8080/ordinateur/ordinateur?action=ordinateurs` — liste des ordinateurs (JSON)
+- `http://localhost:8080/ordinateur/ordinateur?action=etats` — liste des états (JSON)
+- `http://localhost:8080/ordinateur/ordinateur?action=historique` — historique des changements d'état (JSON)
+- `http://localhost:8080/ordinateur/ordinateur?action=dashboard` — KPI + données pour les graphiques (JSON)
+- `http://localhost:8080/ordinateur/ordinateur?action=KPI_panne&KPI_date=2026-02-01+08:45:00` — KPI + date precis (JSON)
+- `http://localhost:8080/ordinateur/ordinateur` (POST, `action=saveEtat`) — enregistrement d'un changement d'état (retourne JSON)

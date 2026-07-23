@@ -1,0 +1,20 @@
+src/main/webapp/
+├── css/
+│   ├── main.css          <- styles communs (sidebar, layout, variables couleurs)
+│   ├── forms.css         <- styles des formulaires (login, ordinateur, modele)
+│   └── list.css          <- styles des tableaux (existant, à garder/adapter)
+│
+├── partials/
+│   └── sidebar.jsp       <- menu latéral, inclus via <%@ include file="partials/sidebar.jsp" %>
+│
+├── login.jsp             <- reste seul, sans sidebar
+├── list.jsp              <- liste ordinateurs (+ sidebar)
+├── form.jsp              <- ajout/modif ordinateur (+ sidebar)
+├── list_modele.jsp       <- liste modèles (+ sidebar)
+├── form_modele.jsp       <- ajout/modif modèle (+ sidebar)
+├── historique.php        <- reste en PHP, sidebar dupliqué en HTML statique
+│
+└── WEB-INF/
+    ├── web.xml
+    ├── classes/
+    └── lib/

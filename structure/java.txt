@@ -1,0 +1,17 @@
+src/main/java/
+├── controllers/
+│   ├── LoginServlet.java
+│   ├── LogoutServlet.java        <- nouveau, pour la déconnexion
+│   ├── OrdinateurServlet.java
+│   ├── ListeServlet.java
+│   └── ModeleServlet.java        <- nouveau, CRUD complet
+│
+├── models/
+│   ├── Ordinateur.java
+│   ├── Modele.java
+│   ├── EtatDTO.java
+│   ├── HistoriqueEtatDTO.java
+│   └── OrdinateurOptionDTO.java
+│
+└── utils/
+    └── DatabaseConnection.java

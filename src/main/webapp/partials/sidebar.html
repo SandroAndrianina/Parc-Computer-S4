@@ -1,0 +1,40 @@
+<!-- partials/sidebar.html — chargé en fetch() par js/load-sidebar.js dans les pages PHP -->
+<aside class="app-sidebar">
+    <div class="brand">
+        <i class="fa-solid fa-server"></i>
+        <span>Parc Computer ETU4110</span>
+    </div>
+
+    <div class="nav-section-label">Général</div>
+    <a class="nav-link" data-page="dashboard" href="dashboard.php">
+        <i class="fa-solid fa-gauge"></i> Dashboard
+    </a>
+
+    <div class="nav-section-label">Ordinateurs</div>
+    <a class="nav-link" data-page="list" href="list">
+        <i class="fa-solid fa-desktop"></i> Liste des ordinateurs
+    </a>
+    <a class="nav-link" data-page="form" href="ordinateur?action=add">
+        <i class="fa-solid fa-plus"></i> Ajouter un ordinateur
+    </a>
+    <a class="nav-link" data-page="historique" href="historique.php">
+        <i class="fa-solid fa-clock-rotate-left"></i> Historique des états
+    </a>
+    <a class="nav-link" data-page="insertion_etat" href="insertion_etat.php">
+        <i class="fa-solid fa-pen-to-square"></i> Changer un état
+    </a>
+
+    <div class="nav-section-label">Modèles</div>
+    <a class="nav-link" data-page="list_modele" href="list_modele">
+        <i class="fa-solid fa-layer-group"></i> Liste des modèles
+    </a>
+    <a class="nav-link" data-page="form_modele" href="modele?action=add">
+        <i class="fa-solid fa-circle-plus"></i> Ajouter un modèle
+    </a>
+
+    <div class="sidebar-footer">
+        <a class="nav-link" href="logout">
+            <i class="fa-solid fa-right-from-bracket"></i> Déconnexion
+        </a>
+    </div>
+</aside>
