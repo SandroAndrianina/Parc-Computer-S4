@@ -2,7 +2,7 @@
 SELECT e.libelle, COUNT(*) AS nb  
                         FROM ordinateur o  
                         JOIN (SELECT id_ordinateur, date_changement AS derniere FROM historique_etat 
-                                WHERE date_changement='2026-02-01 08:45:00'
+                                WHERE date_changement='2026-07-23 00:00:00'
                                 GROUP BY id_ordinateur) dernier  
                           ON o.id_ordinateur = dernier.id_ordinateur  
                         JOIN historique_etat h  
@@ -14,7 +14,7 @@ SELECT e.libelle, COUNT(*) AS nb
 SELECT m.libelle panne, COUNT(*) AS nb  
                         FROM ordinateur o  
                         JOIN (SELECT id_ordinateur, date_changement AS derniere FROM historique_etat 
-                                WHERE date_changement='2026-02-01 08:45:00'
+                                WHERE date_changement='2026-07-23 00:00:00'
                                 GROUP BY id_ordinateur) dernier 
                           ON o.id_ordinateur = dernier.id_ordinateur  
                         JOIN historique_etat h  
